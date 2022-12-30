@@ -71,10 +71,13 @@ Your current code is iterating a list of Notes and instructing them to move one 
 ***
 To make sure that the motion doesn't get bogged down I did a simple test where I'm adding a `Note` for every mouse click. (This should still leave plenty of work to adapt this to the game that is your assignment.) 
 
-![screenshot](https://github.com/IVSoftware/falling-notes/blob/master/falling-notes/Screenshots/screenshot.png)
+[![screenshot][1]][1]
 
     public partial class MainForm : Form
     {
+        .
+        .
+        .
         protected override void OnMouseClick(MouseEventArgs e)
         {
             base.OnMouseClick(e);
@@ -97,3 +100,6 @@ To make sure that the motion doesn't get bogged down I did a simple test where I
             _buttonCount = 0,
             _buttonIndex = 0;
     }
+
+
+  [1]: https://i.stack.imgur.com/EpMkq.png
